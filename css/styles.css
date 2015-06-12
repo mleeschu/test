@@ -48,41 +48,38 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	border: none;
  }
 
- /**Radio Button Styling**/
-#radio-user-type .check-container {
+/**
+ * Radio Button Overrides
+ **/ 
+
+ #radio-user-type .check-container {
 	float: left;
 	width: 30%;
-}
 
-.check-container {
 	display: inline-block;
 	position: relative;
 	margin-bottom: 10px;
-}
-
-.regular-radio {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 #radio-user-type .check-container label {
 	text-transform: capitalize;
 	font-size: 18px;
 	color: #fff;
-	margin-top: -1px;
+	margin: -1px 0px 5px 5px;
 }
 
-.regular-radio:checked+label {
+#radio-user-type .regular-radio:checked+label {
 	background-color: #FFF;
 }
 
-.check-container label {
-	margin: 5px 0px 5px 5px;
+#radio-user-type .regular-radio {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-.regular-radio+label {
+#radio-user-type .regular-radio+label {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-color: #00BFE7;
@@ -93,7 +90,7 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	margin: 0 5px 5px 0 !important;
 }
 
-.regular-radio:checked+label:after {
+#radio-user-type .regular-radio:checked+label:after {
 	content: ' ';
 	width: 10px;
 	height: 10px;
@@ -103,7 +100,6 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	background: #00BFE7;
 	left: 4px;
 }
-/**Radio Button Styling**/
 
 /* ==========================================================================
    General styles
