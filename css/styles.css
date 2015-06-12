@@ -52,6 +52,12 @@ src: url("../fonts/ProximaNova-Thin.otf");
  * Radio Button Overrides
  **/ 
 
+ .select-radio {
+
+	  margin-left: auto ;
+	  margin-right: auto ;
+ }
+
  #radio-user-type .check-container {
 	float: left;
 	width: 30%;
@@ -68,15 +74,15 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	margin: -1px 0px 5px 5px;
 }
 
-#radio-user-type .regular-radio:checked+label {
-	background-color: #FFF;
-}
-
 #radio-user-type .regular-radio {
 	opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+#radio-user-type .regular-radio:checked+label {
+	background-color: #FFF;
 }
 
 #radio-user-type .regular-radio+label {
