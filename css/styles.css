@@ -21,7 +21,8 @@ src: url("../fonts/ProximaNova-Thin.otf");
  * Input Group Overrides
  **/ 
 .noodle-input {
-	margin-bottom: 3%;
+	margin-top: 8%;
+	margin-bottom: 8%;
 }
 
  .noodle-input .form-control {
@@ -136,6 +137,10 @@ h1 {
 }
 
 h2 {
+	font-size: 44px;
+}
+
+h3 {
 	font-size: 36px;
 }
 
@@ -160,12 +165,11 @@ h2 {
 #big-header h1 {
   color:#fff;
   padding-top: 5%;
-  padding-bottom: 1%;
 }
 
-#big-header h2 {
+#big-header h3 {
 	font-style: italic;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 
 #big-header .sub-text {
