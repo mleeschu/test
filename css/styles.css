@@ -18,14 +18,6 @@ src: url("../fonts/ProximaNova-Thin.otf");
 }
 
 /**
- * Text Alignment & Styles
- **/ 
-
-.centered {
-  text-align: center
-}
-
-/**
  * Input Group Overrides
  **/ 
 .noodle-input {
@@ -101,6 +93,28 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	left: 4px;
 }
 
+/**
+ * Btn Overrides
+ **/ 
+
+.btn-noodle {
+	background: #07B0D4;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px 80px;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid #00738b;
+}
+
+ .btn-noodle:hover {
+ 	background: #20c9ed;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #00738b;
+}
+
 /* ==========================================================================
    General styles
    ========================================================================== */
@@ -125,6 +139,13 @@ h2 {
 	font-size: 36px;
 }
 
+/**
+ * Text Alignment & Styles
+ **/ 
+
+.centered {
+  text-align: center
+}
 
 /* ==========================================================================
    Containers
@@ -157,7 +178,7 @@ h2 {
 #big-header h1 {
   color:#fff;
   padding-top: 2%;
-  padding-bottom: 20px;
+  padding-bottom: 1%;
 }
 
 #big-header h2 {
@@ -189,4 +210,8 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.register {
+	margin-top: 3%;
 }
