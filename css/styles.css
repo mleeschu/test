@@ -151,33 +151,15 @@ h2 {
    Containers
    ========================================================================== */
 
-/**
- * Index-Page Layout - #big-header 
- *
- * This creates and defines styles for above-the-fold large image container 
- * 
- * .index-## is used to define the background image for each separate associated 
- * index page
- *
- * Bootstrap classes employed for positioning and mobile responsive styling
- * 
- * Example HTML:
- *
- *   <div id="big-header" class="index-00">
- *   
- *        CONTENTS HERE
- *
- *   </div><!--End big-header-->
- *
- **/
-
-#big-header {
-  padding-top: 7%;
+.logo-head {
+	position: relative;
+	top: 20px;
+	left: 2%;
 }
 
 #big-header h1 {
   color:#fff;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 1%;
 }
 
