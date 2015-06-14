@@ -35,7 +35,11 @@
         </div><!--End col-lg-12-->
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
           <!--Email Alert -->
-          <div id="email-success" class="alert alert-success fade in input-field" role="alert" data-dismiss="alert"></div>
+          <div id="email-success" class="alert alert-success fade in input-field" role="alert" data-dismiss="alert"> 
+              <h1><i class="fa fa-check-square"></i></h1>
+              <h2></h2>
+              <h4></h4>
+          </div>
           <!--Email Alert -->
         </div>
       </div><!--End row-->
@@ -50,13 +54,14 @@
               <input type="text" class="form-control" id="email" placeholder="Email" aria-describedby="sizing-addon1" required></input>
             </div> 
             <!--Email Alert -->
-            <div id="email-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert"></div>
+            <div id="email-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert">
+            </div>
             <!--Email Alert -->
         </div>
 
         <!--Radio Button Text -->
         <div class="row centered">
-          <div class="col-md-12">
+          <div class="col-md-12 col-sm-12">
             <h3>I am a...</h3>
           </div>
         </div>
@@ -133,8 +138,10 @@
         { 
           $("#email-error-mes").hide();
           $( ".noodle-input .form-control").css({"border": "none"});       
-          $("#email-success").show().text("Thanks for signing up for Noodle Markets! We'll be in touch soon.");   
-          $("#register-form").get(0).reset();           
+          $("#email-success").show();
+          $("#email-success h2").append("Thanks for signing up for Noodle Markets!");
+          $("#email-success h4").append("We'll be in touch soon.");
+          $("#register-form").hide();           
         } /* End of ELSE */ 
                   
         }); /* End of SUBMIT */

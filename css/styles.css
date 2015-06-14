@@ -217,12 +217,25 @@ h3 {
 }
 
 #email-error-mes {
-	margin-top: -6%;
+	margin-top: -4%;
 }
 
 #email-success {
-	margin-bottom: -6%;
+	margin-top: 2%;
+	padding: 1% 8% 12% 8%;
+	background-color: #07B0D4;
+	color: #fff;
 }
+
+#email-success h2 {
+	font-size: 1.5em;
+}
+
+#email-success h4 {
+	margin-top: 10%;
+	font-size: 1.3em;
+}
+
 /* ==========================================================================
    Responsive Styling
    ========================================================================== */
