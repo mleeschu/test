@@ -105,9 +105,17 @@ src: url("../fonts/ProximaNova-Thin.otf");
   text-decoration: none;
   border: none;
   border-bottom: 2px solid #00738b;
+  margin-bottom: 2%;
 }
 
  .btn-noodle:hover {
+ 	background: #20c9ed;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #00738b;
+}
+
+.btn-noodle:active {
  	background: #20c9ed;
   color: #fff;
   text-decoration: none;
@@ -196,14 +204,25 @@ h3 {
 	padding-bottom: 5%;
 }
 
-.radio-user-type {
-
-}
 
 .register {
 	margin-top: 3%;
 }
 
+/* ==========================================================================
+   Alerts
+   ========================================================================== */
+.input-field {
+	display: none;
+}
+
+#email-error-mes {
+	margin-top: -6%;
+}
+
+#email-success {
+	margin-bottom: -6%;
+}
 /* ==========================================================================
    Responsive Styling
    ========================================================================== */

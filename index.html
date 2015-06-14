@@ -33,61 +33,82 @@
           <h1>We are revolutionizing K-12 purchasing.</h1>
           <h2 class="sub-text">Join us.</h2>
         </div><!--End col-lg-12-->
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <!--Email Alert -->
+          <div id="email-success" class="alert alert-success fade in input-field" role="alert" data-dismiss="alert"></div>
+          <!--Email Alert -->
+        </div>
       </div><!--End row-->
 
-      <!--Input Field -->
-      <div class="row ">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">  
+      <form id="register-form" onsubmit="return false">
+        
+        <!--Input Field -->
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">  
            <div class="noodle-input input-group input-group-lg">
-            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope-o"></i></span>
-            <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope-o"></i></span>
+              <input type="text" class="form-control" id="email" placeholder="Email" aria-describedby="sizing-addon1" required></input>
+            </div> 
+            <!--Email Alert -->
+            <div id="email-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert"></div>
+            <!--Email Alert -->
+        </div>
+
+        <!--Radio Button Text -->
+        <div class="row centered">
+          <div class="col-md-12">
+            <h3>I am a...</h3>
+          </div>
+          <div class="col-md-3">
+            <!--Email Alert -->
+            <div id="user-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert"></div>
+            <!--Email Alert -->
           </div>
         </div>
-      </div>
 
-      <!--Radio Button Text -->
-      <div class="row centered">
-        <div class="col-md-12">
-          <h3>I am a...</h3>
+        <!--Radio Buttons -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-2  col-xs-11 col-xs-offset-1">
+
+            <div id="radio-user-type" class="clearfix">
+
+              <!--Option 1-->
+              <div class="clearfix check-container">
+               <input class="regular-radio" tabindex="100" id="radioEducator" type="radio" name="radioUsertype" value="educator" data-qtip-position-self="left bottom" data-qtip-position-target="right top" required>
+                  <label for="radioEducator"></label>
+                  <label for="radioEducator">Educator</label>
+                </input>
+               </div>
+
+              <!--Option 2-->
+              <div class="clearfix check-container">
+               <input class="regular-radio" tabindex="100" id="radioVendor" type="radio" name="radioUsertype" value="vendor" data-qtip-position-self="left bottom" data-qtip-position-target="right top" required>
+                  <label for="radioVendor"></label>
+                  <label for="radioVendor">Vendor</label>
+               </input>
+              </div>
+
+              <!--Option 3-->
+              <div class="clearfix check-container">
+               <input class="regular-radio" tabindex="100" id="radioOther" type="radio" name="radioUsertype" value="other" data-qtip-position-self="left bottom" data-qtip-position-target="right top" required>
+                  <label for="radioOther"></label>
+                  <label for="radioOther">Other</label>
+               </input>
+              </div>
+              <!--Email Alert -->
+            <div id="user-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert"></div>
+            <!--Email Alert -->
+            </div><!--End radio-user-type-->
+          </div><!--End col-md-6-->
+        </div><!--End row-->
+
+        <div class="row centered register">
+          <div class="col-md-12">
+           <button class="btn btn-noodle btn-default btn-lg" type="submit">Register</button>
+          </div>
         </div>
-      </div>
 
-      <!--Radio Buttons -->
-      <div class="row">
-        <div class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-2  col-xs-11">
-
-          <div id="radio-user-type" class="clearfix">
-
-            <!--Option 1-->
-            <div class="clearfix check-container">
-             <input class="regular-radio" tabindex="100" id="radioTeacher" type="radio" name="radioUsertype" value="teacher" data-qtip-position-self="left bottom" data-qtip-position-target="right top">
-                <label for="radioTeacher"></label>
-                <label for="radioTeacher">Educator</label>
-             </div>
-
-            <!--Option 2-->
-            <div class="clearfix check-container">
-             <input class="regular-radio" tabindex="100" id="radioStudent" type="radio" name="radioUsertype" value="student" data-qtip-position-self="left bottom" data-qtip-position-target="right top">
-                <label for="radioStudent"></label>
-                <label for="radioStudent">Vendor</label>
-            </div>
-
-            <!--Option 3-->
-            <div class="clearfix check-container">
-             <input class="regular-radio" tabindex="100" id="radioAdmin" type="radio" name="radioUsertype" value="admin" data-qtip-position-self="left bottom" data-qtip-position-target="right top">
-                <label for="radioAdmin"></label>
-                <label for="radioAdmin">Other</label>
-            </div>
-
-          </div><!--End radio-user-type-->
-        </div><!--End col-md-6-->
-      </div><!--End row-->
-
-      <div class="row centered register">
-        <div class="col-md-12">
-         <button class="btn btn-noodle btn-default btn-lg">Register</button>
-        </div>
-      </div>
+      </form><!--End Form-->
 
     </div><!--End container-->
   </div><!--End big-header-->
@@ -95,5 +116,41 @@
   <!-- Bootstrap core JavaScript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+  //<![CDATA[
+    $(document).ready(function(){ 
+      
+      $("#register-form").submit(function() {
+        console.log("Testing!");
+        
+        var email = $("#email").val();
+
+        //Validate the email with regex
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (re.test(email) == false)
+        {
+          $("#email-error-mes").show().text("Please enter a valid email address.");
+          $( ".noodle-input .form-control").css({"border": "3px solid #FF1800"});
+        }
+
+        else 
+
+        { 
+          $("#email-error-mes").hide();
+          $( ".noodle-input .form-control").css({"border": "none"});       
+          $("#email-success").show().text("Thanks for signing up! We'll be in touch soon.");              
+        } /* End of ELSE */ 
+
+                      
+        }); /* End of SUBMIT */
+
+      });                           
+    
+  //]]>   
+</script>
+
+
 
 </body>
