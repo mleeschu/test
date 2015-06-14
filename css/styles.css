@@ -223,8 +223,9 @@ h3 {
 #email-success {
 	margin-top: 2%;
 	padding: 1% 8% 12% 8%;
-	background-color: #07B0D4;
+	background-color: rgba(7, 176, 212, 0.8);
 	color: #fff;
+	border: none;
 }
 
 #email-success h2 {
