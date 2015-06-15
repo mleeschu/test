@@ -41,6 +41,10 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	border: none;
  }
 
+ .input-group > .form-control {
+ 	font-size: 1em;
+ }
+
 /**
  * Radio Button Overrides
  **/ 
@@ -156,7 +160,7 @@ h3 {
 }
 
 #big-header h3 {
-	font-style: italic;
+  font-style: italic;
   padding-bottom: 2%;
 }
 
