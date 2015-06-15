@@ -157,7 +157,7 @@ h3 {
 #big-header h1 {
   color:#fff;
   padding-top: 7%;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 
 #big-header h3 {
@@ -293,7 +293,7 @@ h3 {
 	}
 
 	#radio-user-type .check-container label {
-		font-size: 15px;
+		font-size: 13px;
 	}	
 
 }
