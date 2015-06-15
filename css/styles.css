@@ -25,6 +25,10 @@ src: url("../fonts/ProximaNova-Thin.otf");
 	margin-bottom: 8%;
 }
 
+.input-group-lg>.form-control {
+	height: 60px;
+}
+
  .noodle-input .form-control {
     background-color: #eee;
  }
@@ -59,9 +63,9 @@ src: url("../fonts/ProximaNova-Thin.otf");
 
 #radio-user-type .check-container label {
 	text-transform: capitalize;
-	font-size: 18px;
+	font-size: 1.5em;
 	color: #fff;
-	margin: -1px 0px 5px 5px;
+	margin: -7px 0px -20px 5px;
 }
 
 #radio-user-type .regular-radio {
@@ -151,13 +155,13 @@ h2 {
 }
 
 h3 {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 #big-header h1 {
   color:#fff;
   padding-top: 7%;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
 }
 
 #big-header h3 {
@@ -211,7 +215,7 @@ h3 {
 
 
 .register {
-	margin-top: 3%;
+	padding-top: 3%;
 }
 
 /* ==========================================================================
@@ -226,7 +230,7 @@ h3 {
 }
 
 #email-success {
-	margin-top: 2%;
+	margin-top: 10%;
 	padding: 1% 8% 12% 8%;
 	background-color: rgba(7, 176, 212, 0.8);
 	color: #fff;
@@ -269,6 +273,10 @@ h3 {
   .register {
 		margin-top: 10%;
 	}
+
+	#radio-user-type .check-container label {
+		font-size: 1.2em;
+	}	
 }
 
 @media (max-width: 480px) {
@@ -294,6 +302,10 @@ h3 {
 
 	#radio-user-type .check-container label {
 		font-size: 13px;
-	}	
+	}
+    
+    .radio-educator {
+    	margin-right: 10px;
+    }
 
 }

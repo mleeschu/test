@@ -44,19 +44,6 @@
       </div><!--End row-->
 
       <form id="register-form" onsubmit="return false">
-        
-        <!--Input Field -->
-        <div class="row">
-          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">  
-           <div class="noodle-input input-group input-group-lg">
-              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope-o"></i></span>
-              <input type="text" class="form-control" id="email" placeholder="Please enter your email address to receive updates on our launch." aria-describedby="sizing-addon1" required></input>
-            </div> 
-            <!--Email Alert -->
-            <div id="email-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert">
-            </div>
-            <!--Email Alert -->
-        </div>
 
         <!--Radio Button Text -->
         <div class="row centered">
@@ -72,7 +59,7 @@
             <div id="radio-user-type" class="clearfix">
 
               <!--Option 1-->
-              <div class="clearfix check-container">
+              <div class="clearfix check-container radio-educator">
                <input class="regular-radio" tabindex="100" id="radioEducator" type="radio" name="radioUsertype" value="educator" data-qtip-position-self="left bottom" data-qtip-position-target="right top" required>
                   <label for="radioEducator"></label>
                   <label for="radioEducator">An Educator</label>
@@ -98,6 +85,22 @@
             </div><!--End radio-user-type-->
           </div><!--End col-md-6-->
         </div><!--End row-->
+        
+        <!--Input Field -->
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">  
+           <div class="noodle-input input-group input-group-lg">
+              <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope-o"></i></span>
+              <input type="text" class="form-control" id="email" placeholder="Please enter your email address to receive updates on our launch." aria-describedby="sizing-addon1" required></input>
+          </div> 
+          <!--Email Alert -->
+          <div id="email-error-mes" class="alert alert-danger fade in input-field" role="alert" data-dismiss="alert">
+          </div>
+          <!--Email Alert -->
+        </div>
+      </div>
+
+        
 
         <div class="row centered register">
           <div class="col-md-12">
