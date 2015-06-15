@@ -30,7 +30,7 @@ src: url("../fonts/ProximaNova-Thin.otf");
  }
 
  .noodle-input .form-control:focus {
- 		background-color: #fff;
+    background-color: #fff;
     border: 2px solid #00BFE7;
     box-shadow: none;
  }
@@ -157,6 +157,7 @@ h3 {
 #big-header h1 {
   color:#fff;
   padding-top: 7%;
+  margin-bottom: 5%;
 }
 
 #big-header h3 {
