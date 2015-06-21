@@ -30,7 +30,7 @@
       <!--Call to Action -->
       <div class="row centered">
         <div class="col-lg-12">
-          <h1>We are revolutionizing K-12 purchasing.</h1>
+          <h1>We are revolutionizing K-12 purchasing..</h1>
         </div><!--End col-lg-12-->
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
           <!--Email Alert -->
@@ -120,6 +120,19 @@
   <script type="text/javascript">
   //<![CDATA[
     $(document).ready(function(){ 
+
+      var path = "http://damp-gorge-5892.herokuapp.com/";
+
+
+      var message = {};
+      message.something = "else";
+
+      $.ajaxSetup({async: true});
+      $.post(path+"ping/", JSON.stringify(message), function(resp) {
+      
+        });
+      $.ajaxSetup({async: true});
+
       
       $("#register-form").submit(function() {
         console.log("Testing!");
@@ -143,7 +156,41 @@
           $("#email-success").show();
           $("#email-success h2").append("Thanks for registering your email with Noodle Markets!");
           $("#email-success h4").append("We'll be in touch soon.");
-          $("#register-form").hide();           
+          $("#register-form").hide();   
+
+          
+          
+
+          // var $el = $("#radioEducator");
+          // var status = $el.checked;
+
+
+          // console.log(status);
+
+          var user_type = "None";
+
+          if($('#radioEducator').is(':checked')) { 
+
+              user_type = "Educator";
+          } else if ($('#radioVendor').is(':checked')) {
+              user_type = "Vendor";
+          } else if ($('#radioOther').is(':checked')) {
+              user_type = "Other";
+          } 
+
+
+          var signup_message = {};
+          signup_message.email = email;
+          signup_message.user_type = user_type;
+
+
+          $.ajaxSetup({async: true});
+          $.post(path+"signup/", JSON.stringify(signup_message), function(resp) {
+              console.log(resp)
+            });
+          $.ajaxSetup({async: true});          
+
+
         } /* End of ELSE */ 
                   
         }); /* End of SUBMIT */
