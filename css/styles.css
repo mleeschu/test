@@ -281,10 +281,10 @@ h3 {
 @media (max-width: 480px) {
 	
 	.logo-head {
-		position: relative;
 		top: 20px;
-		left: 5%;
+		left: 1%;
 	}
+
 	#big-header h1 {
 		padding-top: 10%;
   	margin-left: 10%;
